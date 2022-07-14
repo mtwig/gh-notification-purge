@@ -101,9 +101,9 @@ func main() {
 			appError(err, fmt.Sprintf("Failed to mark notification %s as done.", currentThread.Subject.Title))
 		}
 		if response.StatusCode == 205 {
-			info(fmt.Sprintf("Marked thread [%s] as read.", currentThread.Subject.Title))
+			info(fmt.Sprintf("Marked thread [%s] as read.\n", currentThread.Subject.Title))
 		} else if response.StatusCode == 304 {
-			warn("Thread was not marked as read")
+			warn("Thread was not marked as read\n")
 		} else if response.StatusCode == 403 {
 			appError(errors.New("unauthorized"), "authentication issue, check gh auth")
 		} else {
