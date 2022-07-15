@@ -3,6 +3,7 @@ module github.com/mtwig/gh-notification-purge
 go 1.18
 
 require (
+	github.com/TwiN/go-color v1.1.0 // indirect
 	github.com/cli/go-gh v0.0.3 // indirect
 	github.com/cli/safeexec v1.0.0 // indirect
 	github.com/cli/shurcooL-graphql v0.0.1 // indirect
