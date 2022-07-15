@@ -1,4 +1,6 @@
 github.com/MakeNowJust/heredoc v1.0.0/go.mod h1:mG5amYoWBHf8vpLOuehzbGGw0EHxpZZ6lCpQ4fNJ8LE=
+github.com/TwiN/go-color v1.1.0 h1:yhLAHgjp2iAxmNjDiVb6Z073NE65yoaPlcki1Q22yyQ=
+github.com/TwiN/go-color v1.1.0/go.mod h1:aKVf4e1mD4ai2FtPifkDPP5iyoCwiK08YGzGwerjKo0=
 github.com/cli/go-gh v0.0.3 h1:GcVgUa7q0SeauIRbch3VSUXVij6+c49jtAHv7WuWj5c=
 github.com/cli/go-gh v0.0.3/go.mod h1:J1eNgrPJYAUy7TwPKj7GW1ibqI+WCiMndtyzrCyZIiQ=
 github.com/cli/safeexec v1.0.0 h1:0VngyaIyqACHdcMNWfo6+KdUYnqEr2Sg+bSP1pdF+dI=
