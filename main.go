@@ -3,7 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	app "github.com/mtwig/gh-notification-purge/app"
+	"github.com/TwiN/go-color"
+	"github.com/mtwig/gh-notification-purge/app"
 	"os"
 )
 
@@ -14,11 +15,14 @@ func main() {
 	flag.BoolVar(&cfg.DryRun, "dry-run", false, "do not really mark as read")
 	flag.Parse()
 
-	app, err := app.CreateNew(cfg)
+	instance, err := app.CreateNew(cfg)
 	if err != nil {
-		fmt.Printf("unable to create app.\n%s\n", err)
+		fmt.Printf("unable to create instance.\n%s\n", err)
 		os.Exit(1)
 	}
 
-	app.Run()
+	err = instance.Run()
+	if err != nil {
+		fmt.Printf(color.Colorize(color.Red, fmt.Sprintf("Error: %s", err)))
+	}
 }
